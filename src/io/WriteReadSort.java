@@ -11,13 +11,13 @@ import java.util.Scanner;
  */
 public class WriteReadSort {
     public static void main(String[] args) throws IOException {
-        new WriteReadSort().WriteThenRead();
-        new WriteReadSort().SortLines();
+        new WriteReadSort().writeThenRead();
+        new WriteReadSort().sortLines();
     }
 
     String fileName = "ToSort.txt";
 
-    private void WriteThenRead() throws IOException {
+    private void writeThenRead() throws IOException {
         FileWriter writer;
         char[] n = new char[100];
         FileReader reader;
@@ -39,7 +39,7 @@ public class WriteReadSort {
         }
     }
 
-    private void SortLines()throws FileNotFoundException{
+    private void sortLines()throws FileNotFoundException{
         String fileName = "ToSort.txt";
         try {
             // scanner to read the file
