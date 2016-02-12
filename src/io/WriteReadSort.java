@@ -40,7 +40,6 @@ public class WriteReadSort {
     }
 
     private void sortLines()throws FileNotFoundException{
-        String fileName = "ToSort.txt";
         try {
             // scanner to read the file
             Scanner scanner = new Scanner(new File(fileName));
