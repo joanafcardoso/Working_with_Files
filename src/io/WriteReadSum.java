@@ -9,16 +9,16 @@ import java.util.*;
 public class WriteReadSum{
 
     public static void main(String[] args) throws IOException {
-        new WriteReadSum().WriteThenRead();
-        new WriteReadSum().SumPerLine();//using BufferedReader
-        new WriteReadSum().TotalSum();//using BufferedReader
-        new WriteReadSum().SumPerLine2();//using Scanner
-        new WriteReadSum().TotalSum2();//using Scanner
+        new WriteReadSum().writeThenRead();
+        new WriteReadSum().sumPerLine();//using BufferedReader
+        new WriteReadSum().totalSum();//using BufferedReader
+        new WriteReadSum().sumPerLine2();//using Scanner
+        new WriteReadSum().totalSum2();//using Scanner
     }
 
     String fileName = "IntegerSum.txt";
 
-    private void WriteThenRead() throws IOException {
+    private void writeThenRead() throws IOException {
         FileWriter writer;
         char[] n = new char[50];
         FileReader reader;
@@ -43,7 +43,7 @@ public class WriteReadSum{
     }
 
     //using BufferedReader
-    private void SumPerLine() throws IOException {
+    private void sumPerLine() throws IOException {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
             String line;
@@ -64,7 +64,7 @@ public class WriteReadSum{
         }
     }
 
-    private void TotalSum() throws IOException {
+    private void totalSum() throws IOException {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(fileName));
             String line;
@@ -82,7 +82,7 @@ public class WriteReadSum{
     }
 
     //using scanner
-    private void SumPerLine2() throws IOException {
+    private void sumPerLine2() throws IOException {
         try {
             int integer, digit;
             char digitAt;
@@ -108,7 +108,7 @@ public class WriteReadSum{
         }
     }
 
-    private void TotalSum2() throws IOException {
+    private void totalSum2() throws IOException {
         try {
             Scanner scanner = new Scanner(new File(fileName));
             int sum = 0;
