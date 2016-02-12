@@ -31,11 +31,8 @@ public class WriteReadSum{
 
             reader = new FileReader(fileName);
             reader.read(n);
-            for (char c : n) {
-                System.out.print(c);
-            }
+            System.out.println(n);
             reader.close();
-            System.out.println("");
             System.out.println("");
         } catch (IOException e) {
             System.out.println("Error" + e.getMessage());
